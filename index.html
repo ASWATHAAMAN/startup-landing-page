@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>startup landing page</title>
+    <link
+      rel="shortcut icon"
+      href="./images/dress-code.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clrOxfordBlue: "#002857",
+              clrOxfordBlue3: `#001233`,
+              clrDelftBlue: `#33405c`,
+              clrSlateGray: `#7d8597`,
+              clrCherryBlossomPink: `#ffb3c6`,
+              clrBakerMillerPink: `#ff8fab`,
+              clrRussianViolet: `#241943`,
+              clrLilac: `#be97c4`,
+              clrCornsilk: `#fefae1`,
+              clrEarthYellow: `#dda25f`,
+              clrTigersEye: `#bb6b25`,
+            },
+            fontFamily: {
+              serif: ["PT Serif", `serif`],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="flex justify-between items-center mx-[7rem] my-[1rem]">
+      <div class="">
+        <img src="./images/logo.svg" alt="startup landing" class="w-[16rem]" />
+      </div>
+      <div class="flex items-center text-[22px] gap-[2.5rem]">
+        <a href="#" class="text-[purple]">Home</a>
+        <a href="#">Clients</a>
+        <a href="#">Feature</a>
+        <a href="#">Gallery</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+      </div>
+      <div
+        class="px-[2rem] py-[1rem] bg-[purple] text-white rounded-lg text-[22px] font-[500] hover:bg-black"
+      >
+        <button type="button">Join us now</button>
+      </div>
+    </header>
+    <banner-container>
+      <img src="./images/banner.jpg" alt="banner" />
+
+      <div
+        class="bg-white opacity-90 px-[3rem] py-[3rem] border border-white rounded-lg w-[35%] flex flex-col mt-[-50rem] ml-[7rem]"
+      >
+        <h1 class="text-[42px] font-[700] mb-[1rem]">
+          Coworking space that will feel like home.
+        </h1>
+        <p class="text-[24px] leading-[3rem] mb-[1.5rem]">
+          Whether you’re an established enterprise or a growing startup,
+          discover spaces that inspire which will best your most impactful work.
+        </p>
+
+        <div
+          class="px-[2rem] py-[10px] border-[3px] border-purple-800 rounded-lg flex justify-between items-center"
+        >
+          <div class="flex gap-[1rem]">
+            <div>
+              <i class="fa-solid fa-location-dot mt-[1.2rem]"></i>
+            </div>
+            <div class="flex flex-col gap-[10px]">
+              <p class="text-[20px] font-[500] text-[gray]">Find Workplace</p>
+              <p class="text-[22px] font-[500]">Brooklyn, New york</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-sort-down"></i>
+        </div>
+        <btn-div
+          class="bg-[purple] px-[3rem] py-[1rem] text-white rounded-lg opacity-100 text-center mt-[1.5rem] text-[27px] font-[700] cursor-pointer hover:bg-black"
+        >
+          <p>Subscribe</p>
+        </btn-div>
+      </div>
+    </banner-container>
+    <div class="mt-[12.5rem] pt-[6rem]">
+      <h3 class="text-center text-[26px] text-[purple] font-[700] pb-[2rem]">
+        Meet Our Clients
+      </h3>
+      <p
+        class="text-[36px] font-[400] w-[45%] mx-auto text-center leading-[4rem]"
+      >
+        This guys are using our service and they're more than happier ever.
+      </p>
+      <div class="flex w-[10%] gap-[5rem] mx-[15rem]">
+        <img src="./images/uber.png" alt="uber" />
+        <img src="./images/google.png" alt="google" />
+        <img src="./images/paypal.png" alt="paypal" />
+        <div class="flex gap-[10px] items-center w-[30%] mr-[4rem]">
+          <img src="./images/microsoft.png" alt="microsoft" />
+          <span class="text-[30px] text-[gray] font-[600]">microsoft</span>
+        </div>
+        <img src="./images/dribbble.jpg" alt="dribbble" class="ml-[4.5rem]" />
+      </div>
+      <div class="flex w-[90%]">
+        <left-div
+          class="flex flex-col items-center justify-center w-[40%] mx-auto gap-[2rem]"
+        >
+          <p class="text-[45px] font-[500]">
+            Some good place to where can build your startup business
+          </p>
+          <p class="text-[22px] font-[400] leading-[3rem]">
+            Co-working offers beautifully crafted workspaces where people can
+            create, connect, and grow their businesses at prime locations in
+            multiple cities
+          </p>
+
+          <div class="flex gap-[2rem] mt-[2.5rem]">
+            <div-one class="flex flex-col gap-[1rem]">
+              <img src="./images/frame.png" alt="frame" class="w-[25%]" />
+              <span class="text-[22px] font-[600]">1000 ft2</span>
+              <span class="text-[20px] font-[400] text-[gray]"
+                >you will get 1000ft square space facility here.</span
+              >
+            </div-one>
+            <div-two class="flex flex-col gap-[1rem]">
+              <img src="./images/people.png" alt="people" class="w-[25%]" />
+              <span class="text-[22px] font-[600]">80 Members</span>
+              <span class="text-[20px] font-[400] text-[gray]"
+                >you will get advantage to live 80+ member here.</span
+              >
+            </div-two>
+            <div-three class="flex flex-col gap-[1rem]">
+              <img src="./images/wifi.png" alt="wifi" class="w-[25%]" />
+              <span class="text-[22px] font-[600]">100 mbps</span>
+              <span class="text-[20px] font-[400] text-[gray]"
+                >Internet speed is much better than others</span
+              >
+            </div-three>
+          </div>
+        </left-div>
+        <right-div class="w-[45%]">
+          <img src="./images/chairs.webp" alt="chair" />
+          <div
+            class="flex gap-[1rem] px-[2.5rem] py-[2rem] bg-[purple] rounded-lg text-white mt-[-40rem] opacity-95 w-[55%]"
+          >
+            <pause-div class="flex items-center mr-[2rem]">
+              <i class="fa-solid fa-pause"></i>
+            </pause-div>
+            <div class="flex flex-col">
+              <span class="text-[24px] font-[600]">kin Co-working Space</span>
+              <span class="text-[20px] font-[600] text-[lightGray]"
+                >212,Broadway Jamaica</span
+              >
+            </div>
+          </div>
+        </right-div>
+      </div>
+    </div>
+    <img-container>
+      <p class="text-center text-[purple] text-[23px] font-[600] mt-[10rem]">
+        Working Space
+      </p>
+      <p class="text-[40px] text-center font-[400] mt-[2rem] mb-[2rem]">
+        Let’s meet our interior room decoration
+      </p>
+      <div class="grid grid-cols-3 grid-rows-2 gap-[1rem] w-[85%] mx-auto">
+        <img
+          src="./images/dan-gold-4HG3Ca3EzWw-unsplash.jpg"
+          alt="chair"
+          class="h-full"
+        />
+        <img
+          src="./images/erick-lee-hodge-el_V6z_h5nA-unsplash.jpg"
+          alt="chair"
+          class="h-max"
+        />
+        <img
+          src="./images/maarten-deckers-0-frPETzEVs-unsplash.jpg"
+          alt="chair"
+        />
+        <img
+          src="./images/mitch-moondae-zXFtsdi9dIc-unsplash.jpg"
+          alt="chair"
+          class="mt-[-20px]"
+        />
+        <img
+          src="./images/robert-bye-f6bKycd4UFc-unsplash.jpg"
+          alt="chair"
+          class="mt-[-20px]"
+        />
+        <img
+          src="./images/viktor-bystrov-eHRzs3zunvQ-unsplash.jpg"
+          alt="chair"
+          class="mt-[-20px]"
+        />
+      </div>
+      <div
+        class="flex text-center text-[25px] mb-[10rem] py-[1rem] w-[85%] mx-auto cursor-pointer font-medium mt-[2rem] bg-[lightGray] gap-[5px] items-center justify-center hover:bg-[purple] hover:gap-[1rem] hover:text-white"
+      >
+        <p class="">Explore More</p>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </img-container>
+    <div class="bg-slate-950">
+      <p class="text-center text-[26px] font-[500] text-white pt-[5rem]">Pricing plan</p>
+      <p class="text-center text-[40px] font-[500] text-white pt-[2rem]">What deal suit you perfect</p>
+      <div class="border border-slate-600 w-[25%] mx-auto py-[1.3rem] px-[10px] rounded-lg mt-[2rem]">
+        <span class="border border-slate-600 px-[2rem] py-[0.75rem] text-[26px] text-black bg-white rounded-lg font-[500] cursor-pointer">Monthly Plan</span>
+        <span class="text-[26px] text-white font-[500] pl-[1rem] cursor-pointer">Annual Plan</span>
+      </div>
+      <pack-div class="flex justify-center items-center text-white text-[22px] mt-[3rem] pb-[3rem]">
+        <starter-pack class="border border-slate-600 px-[2rem] py-[4rem] w-[35%] rounded-lg">
+          <img src="./images/people.png" alt="people" class="w-[20%] bg-white rounded-lg"/>
+          <p class="text-[30px] font-[600] pt-[1.5rem] pb-[2.5rem]">Starter Pack</p>
+          <div class="flex gap-[1.5rem] mb-[2rem] ">
+            <img src="./images/correct.png" alt="correct" class="w-[5%]">
+            <span class="">Ultimate access to all course, exercises and assessments</span>
+          </div>
+          <div class="flex gap-[1.5rem] mb-[2rem] ">
+            <img src="./images/correct.png" alt="correct" class="w-[5%]">
+            <p>
+              Free access for all kind of exercise corrections with downloads.
+            </p>
+          </div>
+          <div class="flex gap-[1.5rem] mb-[2rem] ">
+            <img src="./images/correct.png" alt="correct" class="w-[5%]">
+            <p>Total assessment corrections with free download access system</p>
+          </div>
+          <div class="flex gap-[1.5rem] mb-[2rem] border-b-2  border-slate-600 pb-[2rem]">
+            <img src="./images/wrong.png" alt="wrong" class="w-[5%]">
+            <p class="text-[Gray]">Unlimited download of courses on the mobile app contents</p>
+          </div>
+          <bottom-div class="flex justify-between items-center">
+            <div class="flex flex-col">
+              <span class="text-[lightGray] text-[20px] font-[600]">Starting from</span>
+              <span class="text-[36px] font-[700]">49.99/mo</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </bottom-div>
+        </starter-pack>
+        <family-pack class="border border-slate-600 px-[2rem] py-[4rem] w-[35%] ml-[2rem] rounded-lg bg-white text-black">
+          <p class="bg-[purple] px-[2rem] py-[0.5rem] mt-[-5.5rem] text-white w-[40%] rounded-lg">Recommended</p>
+          <img src="./images/group(1).png" alt="peoples" class="w-[20%]"/>
+          <p class="text-[30px] font-[600] mt-[4rem] pb-[2.5rem]">Family Pack</p>
+          <div class="flex gap-[1.5rem] mb-[2rem] ">
+            <img src="./images/correct.png" alt="correct" class="w-[5%]">
+            <span
+              >Ultimate access to all course, exercises and assessments</span
+            >
+          </div>
+          <div class="flex gap-[1.5rem] mb-[2rem] ">
+            <img src="./images/correct.png" alt="correct" class="w-[5%]">
+            <p>
+              Free access for all kind of exercise corrections with downloads.
+            </p>
+          </div>
+          <div class="flex gap-[1.5rem] mb-[2rem] ">
+            <img src="./images/correct.png" alt="correct" class="w-[5%]">
+            <p>Total assessment corrections with free download access system</p>
+          </div>
+          <div class="flex gap-[1.5rem] mb-[2rem] border-b-2  border-slate-600 pb-[2rem]">
+            <img src="./images/correct.png" alt="correct" class="w-[5%]">
+            <p>Unlimited download of courses on the mobile app contents</p>
+          </div>
+          <bottom-div class="flex justify-between items-center cursor-pointer">
+            <div class="flex flex-col">
+              <span class="text-black text-[20px] font-[600]">Starting from</span>
+              <span class="text-[36px] font-[700]">89.99/mo</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </bottom-div>
+        </family-pack>
+      </pack-div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
