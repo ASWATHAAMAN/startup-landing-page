@@ -35,3 +35,14 @@ img {
   height: auto;
   object-fit: contain;
 }
+
+.fa-solid.fa-angle-right{
+  color: black;
+  margin-top: 3px;
+  padding-left: 3px;
+}
+.fa-solid.fa-angle-right:hover{
+  color: #fff;
+  cursor: pointer;
+}
+
